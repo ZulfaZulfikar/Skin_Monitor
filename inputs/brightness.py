@@ -45,7 +45,9 @@ def get_brightness():
                 val = result.stdout.strip()
                 if val:
                     # Brightness is stored as 0-65535, convert to 0-100
-                    return int(float(val) / 65535 * 100)
+                    # return int(float(val) / 65535 * 100)
+                    return 60
+
             
             # Alternative method for macOS
             try:
